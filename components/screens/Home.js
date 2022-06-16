@@ -225,6 +225,7 @@ const Home = ({navigation}) => {
             }}>
             Xiaomi phones shop on Victoriei Ave 47.
             {'\n'}This shop offers both: Xiaomi phones and accessories for them.
+            
           </Text>
         </View>
         <View
