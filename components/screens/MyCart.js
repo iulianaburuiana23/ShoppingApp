@@ -80,7 +80,7 @@ const MyCart = ({navigation}) => {
       return error;
     }
 
-    ToastAndroid.show('Thank for your command!', ToastAndroid.SHORT);
+    ToastAndroid.show('Thank you for your command!', ToastAndroid.SHORT);
 
     navigation.navigate('Home');
   };
@@ -413,7 +413,7 @@ const MyCart = ({navigation}) => {
                       lineHeight: 20,
                       opacity: 0.5,
                     }}>
-                    ****-9092
+                    ****-8081
                   </Text>
                 </View>
               </View>

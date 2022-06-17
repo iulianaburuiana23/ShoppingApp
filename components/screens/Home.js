@@ -11,8 +11,10 @@ import {COLOURS, Items} from '../database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { useAuth } from '../../AuthContext.js';
 
 const Home = ({navigation}) => {
+  const[user]=useAuth() ;
   const [products, setProducts] = useState([]);
   const [accessory, setAccessory] = useState([]);
 
@@ -42,7 +44,7 @@ const Home = ({navigation}) => {
     setAccessory(accessoryList);
   };
 
-  //create an product reusable card
+  //create a product reusable card
 
   const ProductCard = ({data}) => {
     return (
